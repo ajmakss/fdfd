@@ -1,0 +1,23 @@
+@import './vars';
+
+.bordered {
+    padding: 1px;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, $pink, $violet);
+    box-sizing: border-box;
+	 
+}
+
+.root {
+    border-radius: 15px;
+    background-color: $dark;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+    height: 100%;
+    width: 100%;
+    &:hover {
+        background-color: rgba($dark, 0.7);
+    }
+	
+
+}

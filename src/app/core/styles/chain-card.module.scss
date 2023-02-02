@@ -1,0 +1,30 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #cbcbcb;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.wrapper:hover {
+    border: 1px solid #F26BDC;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+
+.description {
+    font-weight: 400;
+    color: #cbcbcb;
+    font-size: 12px;
+}

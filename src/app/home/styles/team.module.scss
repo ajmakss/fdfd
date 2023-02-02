@@ -1,0 +1,30 @@
+@import '../../core/styles/vars';
+
+.root {
+    padding: 100px 0;
+	@media (max-width:1400px) {
+		
+	}
+}
+
+.textContainer {
+    max-width: 455px;
+    margin: 0 auto;
+    text-align: center;
+	 @media (max-width:420px) {
+		text-align: start;
+
+	}
+}
+
+.cardContainer {
+    margin-top: 60px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    column-gap: 62px;
+	 @media (max-width:1400px) {
+		flex-wrap: wrap;
+		gap: 40px;
+	}
+}

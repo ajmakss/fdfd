@@ -1,0 +1,147 @@
+@import "../../core/styles/vars";
+
+.root {
+	margin-top: 100px;
+	@media (max-width:420px) {
+		margin-top: 60px;
+	}
+}
+.footerRows {
+	display: flex;
+	flex-direction: column;
+}
+.footerRow{
+	max-width: 1220px;
+	display: flex;
+	justify-content: space-between;
+}
+.footerRow:last-child{
+	margin-top: 60px;
+	max-width: 1400px;
+	@media (max-width:420px) {
+		flex-wrap: wrap;
+		gap: 12px;
+		margin-top: 0px;
+	}
+}
+.footerColums {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	@media (max-width:870px) {
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+}
+.footerColumWrapper{
+	display: flex;
+	@media (max-width:870px) {
+		margin-top: 60px;
+	}
+	@media (max-width:420px) {
+		gap: 27px;
+		margin-top: 0px;
+	}
+
+}
+.footerColumMoblie{
+	display: flex;
+	justify-content: space-between;
+	@media (max-width:420px) {
+		flex-wrap: wrap;
+		justify-content: baseline;		
+		gap: 33px;
+	}
+
+
+}
+.footerColum:first-child {
+	padding-right: 50px;
+	@media (max-width:870px) {
+		padding-right: 50px;
+	}
+	@media (max-width:420px) {
+		padding-right: 0px;
+	}
+	@media (max-width:310px) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-right: 0px;
+	}
+}
+.footerColum {
+	max-width: 400px;
+
+}
+.socialMedia {
+	display: flex;
+	gap: 14px;
+	@media (max-width:420px) {
+		display: none;
+	}
+}
+.socialMediaMobile {
+	display: none;
+	@media (max-width:420px) {
+		display: flex;
+		gap: 14px;
+		margin: 60px 0 24px 0;
+	}
+}
+
+.socialMediaItemWrapper {
+	background: url("../assets/icons/background.svg");
+}
+.socialMediaItem {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 42px;
+	height: 42px;
+	z-index: 11;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+.socialMediaItem:hover {
+	box-shadow: 0px 0px 3px 2px rgba(132, 46, 218, 0.728);
+}
+.logo {
+	img {
+		max-width: 173px;
+	}
+}
+.text:global(.MuiTypography-root) {
+	color: $grey;
+	margin: 42px 0px 60px 0px;
+}
+
+.footerColumTitle {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 23px;
+	color: #ffffff;
+}
+.footerColumLinks {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-top: 30px;
+	a {
+		text-decoration: none;
+		font-size: 16px;
+		line-height: 19px;
+		color: #ffffff;
+	}
+}
+.footerGrayText {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: #a5a5a5;
+}

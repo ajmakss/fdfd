@@ -1,0 +1,86 @@
+@import "../../core/styles/vars";
+
+.root {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 10px;
+	padding-bottom: 100px;
+	@media (max-width: 950px) {
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-direction: column-reverse;
+	}
+}
+
+.textSection {
+	max-width: 530px;
+	box-sizing: border-box;
+	@media (max-width: 1130px) {
+		max-width: 470px;
+	}
+	@media (max-width: 490px) {
+		margin: 24px auto;
+		max-width: 280px;
+	}
+}
+
+.h1:global(.MuiTypography-root) {
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 76.8px;
+	@media (max-width: 1130px) {
+		font-size: 54px;
+	}
+	@media (max-width: 490px) {
+		margin: 40px auto;
+		max-width: 280px;
+		font-size: 32px;
+		line-height: 120%;
+	}
+
+}
+
+.h2:global(.MuiTypography-root) {
+	font-weight: 400;
+	color: $grey;
+	margin: 30px 0 42px;
+}
+
+.mainImg {
+	width: 100%;
+	max-width: 678px;
+	height: auto;
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 70%;
+		background-image: radial-gradient($pink, $violet);
+		filter: blur(150px);
+		aspect-ratio: 1 / 1;
+		border-radius: 50%;
+	}
+	@media (max-width: 1130px) {
+		max-width: 420px;
+	}
+	@media (max-width: 490px) {
+		max-width: 277px;
+	}
+	@media (max-width: 320px) {
+		max-width: 257px;
+	}
+}
+
+.buttonsContainer {
+	display: flex;
+	align-items: center;
+	column-gap: 24px;
+	@media (max-width: 490px) {
+		flex-wrap: wrap;
+		gap: 24px;
+		button{
+			width:280px;
+		}
+	}
+}

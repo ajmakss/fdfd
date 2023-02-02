@@ -1,0 +1,43 @@
+.swiper-wrapper{
+	max-width: fit-content !important;
+	display: flex !important;
+	gap: 20px;
+}
+
+.swiper-slide{
+	width: 182px !important;
+}
+
+.swiper{
+	max-width: 606px ;
+	
+}
+.thumb-wrap {
+	position: relative;
+	padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+	height: 0;
+	overflow: hidden;
+  }
+  .thumb-wrap iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-width: 0;
+	outline-width: 0;
+  }
+@media (max-width: 630px) {
+	.swiper{
+		max-width: 402px ;
+	}
+}
+@media (max-width: 430px) {
+	.swiper{
+		max-width:fit-content;
+	}
+	.swiper-wrapper{
+		max-width: 267px  !important;
+
+	}
+}

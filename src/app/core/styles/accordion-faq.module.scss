@@ -1,0 +1,52 @@
+@import "./vars";
+.accordion:global(.MuiPaper-root.MuiAccordion-root) {
+	background-color: transparent;
+	color: $white;
+	border-top: 1px solid $violet;
+	border-image: linear-gradient(to right, rgba($pink, 0.3), rgba($violet, 0.3)) 1;
+	padding-top: 24px;
+}
+
+.accordionSummary:global(.MuiPaper-root.MuiAccordion-root) {
+	padding: 0;
+	font-weight: 500;
+	font-size: 24px;
+	> div {
+		margin: 0;
+	}
+	@media (max-width: 620px) {
+		> div {
+			margin-right: auto;
+			max-width: 430px;
+		}
+	}
+	@media (max-width: 550px) {
+		> div {
+			margin-right: auto;
+			max-width: 360px;
+		}
+	}
+	@media (max-width: 420px) {
+		> div {
+			margin-right: auto;
+			max-width: 230px;
+		}
+		font-size: 18px;
+		line-height: 130%;
+	}
+}
+
+.accordionDetails:global(.MuiPaper-root.MuiAccordion-root) {
+	padding: 24px 0 0;
+	max-width: 569px;
+	@media (max-width: 420px) {
+		max-width: 230px;
+	}
+}
+
+.accordionDetailsText:global(.MuiPaper-root.MuiAccordion-root) {
+	font-size: 14px;
+	color: $grey;
+	font-weight: 400;
+	word-spacing: normal;
+}

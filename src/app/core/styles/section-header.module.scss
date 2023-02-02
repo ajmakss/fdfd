@@ -1,0 +1,11 @@
+.sectionHeader:global(.MuiTypography-root) {
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 57.6px;
+    margin: 30px 0;
+	 @media (max-width: 490px) {
+		margin: 24px 0;
+		font-size: 28px;
+		line-height: 120%;
+	}
+}

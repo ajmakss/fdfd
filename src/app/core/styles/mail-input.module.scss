@@ -1,0 +1,19 @@
+.textFieldWrapper {
+	position: relative;
+	max-width: 482px;
+	width: 100%;
+
+	@media (max-width:850px) {
+		max-width: 385px;
+	}
+	@media (max-width:650px) {
+		max-width: 480px;
+		width: 100%;
+	}
+}
+.mailImage{
+	position: absolute;
+	left: 34px;
+	top: 50%;
+	transform: translateY(-38%);
+}

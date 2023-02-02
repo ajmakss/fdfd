@@ -1,0 +1,12 @@
+@import '../styles/vars';
+
+.subtitle:global(.MuiTypography-root) {
+    color: $pink;
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+    background-image: linear-gradient(to right, $pink, $violet);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,42 @@
+.contactBody {
+	padding-top: 100px;
+	@media (max-width: 450px) {
+		padding-top: 20px;
+	}
+	.contactColums {
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: 1300px) {
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 50px;
+		}
+		@media (max-width: 450px) {
+			gap: 20px;
+		}
+	}
+	.contactColum {
+		max-width: 552px;
+	}
+
+	.contactSubTitle {
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 120%;
+		color: #ffffff;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		@media (max-width: 450px) {
+			font-size: 28px;
+			line-height: 120%;
+		}
+	}
+	.contactText {
+		max-width: 423px;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 150%;
+
+		color: #e3e3e3;
+	}
+}

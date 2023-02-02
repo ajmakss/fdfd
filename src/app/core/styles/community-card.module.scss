@@ -1,0 +1,21 @@
+@import './vars';
+.root {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	 justify-content: space-between;
+	 height: 100%;
+    row-gap: 25px;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 22px;
+    word-spacing: normal;
+}
+
+.text {
+    color: $grey;
+    word-spacing: normal;
+}

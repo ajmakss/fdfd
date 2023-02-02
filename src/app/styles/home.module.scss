@@ -1,0 +1,27 @@
+@import '../core/styles/vars';
+
+#__root{
+	overflow: hidden;
+	max-height: 100vh;
+}
+
+.main {
+    padding: 91px 99px 60px;
+    box-sizing: border-box;
+    width: 100%;
+    .bottomLine {
+        border: none;
+        margin: 101px 0 0;
+        height: 1px;
+        background-image: linear-gradient(to right, $pink, $violet);
+		  @media (max-width:420px) {
+			margin: 60px 0 0;
+		  }
+    }
+	 @media (max-width:1220px) {
+		padding: 91px 60px 60px;
+	 }
+	 @media (max-width:1165px) {
+		padding: 91px 20px 60px;
+	 }
+}

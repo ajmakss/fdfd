@@ -1,0 +1,74 @@
+.h1:global(.MuiTypography-root) {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 76.8px;
+  text-align: center;
+  margin-bottom: 40px;
+
+  @media (max-width: 1130px) {
+    font-size: 54px;
+  }
+
+  @media (max-width: 490px) {
+    margin: 40px auto;
+    max-width: 280px;
+    font-size: 32px;
+    line-height: 120%;
+  }
+
+}
+
+.articlesCards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.articleCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(320px, max-content);
+  padding: 30px;
+  gap: 30px;
+  color: #FFFF;
+  text-decoration: none;
+
+  h2 {
+    margin-top: 0 !important;
+  }
+
+  &:hover {
+    .articleImage {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+  }
+
+  @media(max-width: 1000px) {
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, max-content);
+  }
+}
+
+.articleImageWrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.articleImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  transition: all .3s ease-in;
+  background-size: 100%;
+}
+
+.articleCardContent {
+  padding: auto;
+}
+
+.description {
+  margin-bottom: 30px;
+}

@@ -1,0 +1,23 @@
+@import './vars';
+.border {
+    background-image: linear-gradient(to right, $pink, $violet);
+    padding: 1px;
+    border-radius: 30px;
+    &:hover {
+        background-image: linear-gradient(to right, $violet, $pink);
+    }
+}
+
+.button {
+    color: $white;
+    background-color: $dark;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 14px 42px;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    &:active {
+        background-image: linear-gradient(to right, rgba($violet, 0.3), rgba($pink, 0.3));
+    }
+}

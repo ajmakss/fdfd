@@ -1,0 +1,7 @@
+@import './vars';
+
+.generalText:global(.MuiTypography-root) {
+    font-weight: 400;
+    color: $grey;
+    letter-spacing: normal;
+}

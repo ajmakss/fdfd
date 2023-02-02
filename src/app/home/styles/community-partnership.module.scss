@@ -1,0 +1,35 @@
+@import '../../core/styles/vars';
+
+.root {
+    max-width: 1200px;
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    column-gap: 136px;
+	 @media (max-width:1100px) {
+		flex-direction: column-reverse;
+		padding: 10px 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 50px;
+	}
+	@media (max-width: 660px) {
+		flex-direction: column-reverse;
+	}
+	@media (max-width: 420px) {
+		padding: 100px 0 20px 0;
+	}
+}
+
+.sliderContainer {
+    max-width: 606px;
+    display: flex;
+    align-items: center;
+	 justify-content: center;
+    column-gap: 30px;
+}
+
+.textContainer {
+    flex-shrink: 0;
+}
